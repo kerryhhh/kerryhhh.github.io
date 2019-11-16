@@ -353,11 +353,11 @@
         <div class="abstract-content">
             题目概述打开题目，很明显这是一道文件上传的题目：
 
+ &lt;% asset_img example.jpg [] %&gt; 
 简单上传了一个几个不同类型的文件拓展名后发现exif_imagetype()函数的过滤
 
 并且过滤了&lt;?，因此php脚本中不能出现普通的php标签
-exif_imagetype()这是php中内置的一个函数，它会对文件中的文件头进行识别，如果文件头不符合图片（jpg，gif，png等）的文件头，则会返回false。因此这里就需要用到图片马的知识了，我们可以在文件的头部添加jpg文件的文件头，或者是直接将一个图片和一个php文件拼装起来。php解释器并不会执行php标签外的内容，因此jpg文件的内容并不会影响到php代码的执行。
-....
+exif_imagetype()这是php中内置的一个函数，它会对文件中的文件头进行识别，如果文件头不符合图片（jpg，gif，png等）的文件头，则会返回false。因此这里就需要用到图片马的知识了，我们可以在文件的头部添加jpg文件的文件头，或者是直接将一个图片和一个php文件拼装起来。php解释器并不会...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
